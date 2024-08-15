@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { FormEvent, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -10,10 +10,7 @@ export default function register(){
     const[fullName, setFullName] = useState("")
     const[email, setEmail] = useState("")
     const[whatsapp, setWhatsapp] = useState("")
-
     const[number, setNumber] = useState("")
-
-    // const[chooseCourse, setChooseCourse] = useState("")
     const[country, setCountry] = useState("")
     const[city, setCity] = useState("")
     const[courseType, setCourseType] = useState("")
