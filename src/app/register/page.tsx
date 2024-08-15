@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
-export default function register(){
+export default function Register(){
     const[fullName, setFullName] = useState("")
     const[email, setEmail] = useState("")
     const[whatsapp, setWhatsapp] = useState("")
