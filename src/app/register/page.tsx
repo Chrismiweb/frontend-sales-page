@@ -31,10 +31,8 @@ export default function Register(){
         setIsSending(true)
         e.preventDefault()
         try {
-            // const baseUrl = "https://forms-io.onrender.com/submit-form/21a6cf9a-0088-40fd-84d0-9ddc0f73064b";
-        const baseUrl = "https://forms-io.onrender.com/submit-form/625ac53d-176e-43bf-a468-fc999063eb5f";
-
-            const response: any = await fetch(baseUrl,{
+            const baseUrl:any = process.env.NEXT_PUBLIC_BASE_URL ;
+            const response: any = await fetch(baseUrl, {
                 method: "POST",
                 headers: {'Content-Type': 'application/json'},
                 body : JSON.stringify({email, fullName, number,city,  whatsapp, country,courseType,other, message})
@@ -45,12 +43,10 @@ export default function Register(){
             // console.log(response.message)
             toast.success("Your Message have been sent successfully"); 
             setIsSending(false)
-            // alert("message sent successfully")
         }
        
         } catch (error) {
-            // console.log("error message" + message)
-            // console.log("another error message" + error)
+            
             toast.error("Your message could not be sent. Please try again later")
         }
     }
