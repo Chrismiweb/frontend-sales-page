@@ -49,10 +49,10 @@ function Course() {
       </div>
       <div  className='lg:w-[80%] gap-[20px] lg:gap-[20px] w-[90%] flex flex-col lg:grid  lg:grid-cols-2  justify-between items-center'>
         {course.map((p, index)=>(
-            <div className=' bg-white flex flex-col py-[30px] rounded-md justify-center items-center w-[100%] lg:w-[100%]' key={index}>
-                <p className='font-semibold text-[25px]'>{p.planName}</p>
+            <div className=' bg-white flex flex-col py-[30px] px-[20px] rounded-md justify-center items-center w-[100%] lg:w-[100%]' key={index}>
+                <p className='font-semibold text-center text-[25px]'>{p.planName}</p>
                 <h1 className='text-[30px] font-bold text-blue-900'>{p.price}</h1>
-                <div className='w-[100%] gap-[15px] items-center py-[30px] flex-col flex justify-start px-[20px]'>
+                <div className='w-[100%] gap-[15px] items-center py-[30px] flex-col flex justify-start '>
                     <div className='flex justify-start text-black w-[100%] items-center gap-[15px]'>
                         <p className='font-extrabold text-[16px]'>{p.icon}</p>
                         <p className='font-semibold text-[16px]'>{p.package1}</p>
@@ -83,7 +83,7 @@ function Course() {
                         <p className='font-semibold text-[16px]'>{p.package6}</p>
                     </div>
                     <div className='w-[100%] flex justify-center items-center pt-[20px]'>
-                        <a href='/start-learning' className='bg-blue-600 border-2 border-blue-600 transition-all duration-300 text-white py-[10px] rounded-[10px] px-[20px]  hover:bg-white hover:text-blue-600'>{p.btn}</a>
+                        <a href='/register' className='bg-blue-600 border-2 border-blue-600 transition-all duration-300 text-white py-[10px] rounded-[10px] px-[20px]  hover:bg-white hover:text-blue-600'>{p.btn}</a>
                     </div>
                     
                 </div>
