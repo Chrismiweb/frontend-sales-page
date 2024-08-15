@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <div className='flex flex-col w-[100%] z-50 md:flex bg-pink-100 py-[20px] items-center justify-around'>
         <div className='flex w-[100%] bg-pink-100 items-center justify-around'>
-            <p className='text-[23px] font-bold'>CHRISMI</p>
+            <p className='text-[23px] text-black font-bold'>CHRISMI</p>
             <div className=' hidden lg:flex-row lg:flex  gap-[20px]'>
                 <a href="#hero"><p className='text-[15px] hover:text-pink-600 text-black font-semibold'>Home</p></a>
                 <a href="#about"><p className='text-[15px] hover:text-pink-600 text-black font-semibold'>About Us</p></a>
@@ -26,7 +26,7 @@ function Navbar() {
             <div className='hidden lg:flex-row lg:flex '>
                 <a href='/register'><button className='transition duration-300 text-white py-[10px] font-bold rounded-full hover:bg-gradient-to-r hover:from-blue-700 hover:to-pink-700 px-[15px] bg-gradient-to-r from-pink-700 to-blue-700'>Register Now</button></a>
             </div>
-            <button onClick={handleDropdown} className='lg:hidden flex font-bold text-[20px]'>{dropdown? <IoClose/> : <RiMenu4Fill />}</button>
+            <button onClick={handleDropdown} className='lg:hidden text-black flex font-bold text-[20px]'>{dropdown? <IoClose/> : <RiMenu4Fill />}</button>
         </div>
         {
           dropdown && 

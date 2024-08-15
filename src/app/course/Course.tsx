@@ -43,14 +43,14 @@ function Course() {
   return (
     <div className='w-[100%] bg-slate-100 flex flex-col justify-center items-center gap-[20px] py-[30px]'>
       <div  className='flex flex-col gap-3 justify-center items-center w-[80%]'>
-        <p className='font-bold text-[20px] text-center'>Learn from the best</p>
+        <p className='font-bold text-black text-[20px] text-center'>Learn from the best</p>
         <h1 className='font-bold text-[30px] md:text-[50px] text-blue-900 text-center'>JOIN OUR CLASS TODAY</h1>
         <p id='course'  className='text-[#7A7A7A] font-semibold text-center'>Get access to all of the benefits mentioned below</p>
       </div>
       <div  className='lg:w-[80%] gap-[20px] lg:gap-[20px] w-[90%] flex flex-col lg:grid  lg:grid-cols-2  justify-between items-center'>
         {course.map((p, index)=>(
             <div className=' bg-white flex flex-col py-[30px] px-[20px] rounded-md justify-center items-center w-[100%] lg:w-[100%]' key={index}>
-                <p className='font-semibold text-center text-[25px]'>{p.planName}</p>
+                <p className='font-semibold text-black text-center text-[25px]'>{p.planName}</p>
                 <h1 className='text-[30px] font-bold text-blue-900'>{p.price}</h1>
                 <div className='w-[100%] gap-[15px] items-center py-[30px] flex-col flex justify-start '>
                     <div className='flex justify-start text-black w-[100%] items-center gap-[15px]'>
