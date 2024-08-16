@@ -103,8 +103,8 @@ export default function Register(){
                     <select onChange={(e)=>setCourseType(e.target.value)} required name = "courseType" className="border text-[13px] w-[100%] text-black bg-gray-200 py-[8px] border-[#F8E7F8] px-[10px]  rounded-[10px]" >
                        <option className="text-[13px]" value="">Select Course Type</option>
                        <option className="text-[13px]" value="Frontend Development">Frontend Development</option>
-                       <option className="text-[13px]" value="Backend Development">Next.Js Development Course</option>
-                       <option className="text-[13px]" value="Python Full-Stack Development">React.Js Development Course</option>
+                       <option className="text-[13px]" value="Wordpress Website Development Course">Wordpress Website Development Course</option>
+                       <option className="text-[13px]" value="Mobile Application Development Course">Mobile Application Development Course</option>
                        
                     </select>
                 </div> 
