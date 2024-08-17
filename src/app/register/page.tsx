@@ -100,7 +100,7 @@ export default function Register(){
             <div className="w-[100%] gap-[20px] flex flex-col md:flex-row justify-between items-center">
                 <div className="md:w-[48%] w-[100%] flex flex-col md:gap-[10px]">
                     <p className="font-medium text-[13px] text-black">COURSE TYPE {'*'}</p>
-                    <select onChange={(e)=>setCourseType(e.target.value)} required name = "courseType" className="border text-[13px] w-[100%] text-black bg-gray-200 py-[8px] border-[#F8E7F8] px-[10px]  rounded-[10px]" >
+                    <select onChange={(e)=>setCourseType(e.target.value)} required name = "courseType" className="border text-[13px] w-[100%] text-black bg-gray-200 py-[10px] border-[#F8E7F8] px-[10px]   rounded-[10px]" >
                        <option className="text-[13px]" value="">Select Course Type</option>
                        <option className="text-[13px]" value="Frontend Development">Frontend Development</option>
                        <option className="text-[13px]" value="Wordpress Website Development Course">Wordpress Website Development Course</option>
