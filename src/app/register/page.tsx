@@ -31,8 +31,8 @@ export default function Register(){
         setIsSending(true)
         e.preventDefault()
         try {
-            const baseUrl:any = process.env.NEXT_PUBLIC_BASE_URL ;
-            const response: any = await fetch(baseUrl, {
+            const baseUrl = 'https://forms-io.onrender.com/submit-form/625ac53d-176e-43bf-a468-fc999063eb5f' ;
+            const response:any = await fetch(baseUrl, {
                 method: "POST",
                 headers: {'Content-Type': 'application/json'},
                 body : JSON.stringify({email, fullName, number,city,  whatsapp, country,courseType,other, message})
